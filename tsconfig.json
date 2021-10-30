@@ -1,25 +1,13 @@
 {
-  "extends": "@tsconfig/svelte/tsconfig.json",
-
   "include": ["src/**/*"],
-  "exclude": ["node_modules/*", "__sapper__/*", "public/*"],
-
+  "exclude": ["node_modules/*"],
   "compilerOptions": {
+    "outDir": "./dist/",
+    "target": "ESNEXT",
+    "module": "ESNEXT",
     "strict": true,
-    "sourceMap": true,
-    "noEmit": true,
-    "target": "es6",
-    "module": "commonjs",
-    "lib": ["dom", "esnext"],
-
+    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "resolveJsonModule": true,
-
-    "baseUrl": "./src",
-    "paths": {
-      "*": ["*"]
-    }
-  },
-  "esModuleInterop": true
+    "esModuleInterop": true
+  }
 }
