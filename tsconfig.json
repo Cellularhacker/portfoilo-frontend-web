@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "sourceMap": true,
+    "noEmit": true,
+    "target": "es6",
+    "module": "commonjs",
+    "lib": ["dom", "esnext"],
+
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["*"]
+    }
+  },
+  "include": ["src"],
+  "esModuleInterop": true
+}
